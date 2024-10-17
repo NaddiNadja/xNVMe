@@ -1,0 +1,112 @@
+---
+doc: |
+  Naddi's "fabrics" test xNVMe on Linux
+
+steps:
+- name: sysinfo
+  uses: linux.sysinfo
+
+- name: hugetlbfs
+  uses: linux_setup_hugetlbfs
+
+- name: test_fabrics_not_random
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: false
+
+- name: test_fabrics1
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics2
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics3
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics4
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics5
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics6
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics7
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics8
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics9
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics10
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics11
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics12
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics13
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics14
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics15
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true
+
+- name: test_fabrics16
+  uses: core.testrunner
+  with:
+    args: '-k "fabrics" tests'
+    random-order: true

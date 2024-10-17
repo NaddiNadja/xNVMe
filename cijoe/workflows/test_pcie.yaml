@@ -1,0 +1,112 @@
+---
+doc: |
+  Naddi's "pcie" test xNVMe on Linux
+
+steps:
+- name: sysinfo
+  uses: linux.sysinfo
+
+- name: hugetlbfs
+  uses: linux_setup_hugetlbfs
+
+- name: test_pcie_not_random
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: false
+
+- name: test_pcie1
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie2
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie3
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie4
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie5
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie6
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie7
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie8
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie9
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie10
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie11
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie12
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie13
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie14
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie15
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true
+
+- name: test_pcie16
+  uses: core.testrunner
+  with:
+    args: '-k "pcie" tests'
+    random-order: true

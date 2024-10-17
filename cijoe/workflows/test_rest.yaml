@@ -1,0 +1,112 @@
+---
+doc: |
+  Naddi's "not the others" test xNVMe on Linux
+
+steps:
+- name: sysinfo
+  uses: linux.sysinfo
+
+- name: hugetlbfs
+  uses: linux_setup_hugetlbfs
+
+- name: test_rest_not_random
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: false
+
+- name: test_rest1
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest2
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest3
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest4
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest5
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest6
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest7
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest8
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest9
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest10
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest11
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest12
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest13
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest14
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest15
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true
+
+- name: test_rest16
+  uses: core.testrunner
+  with:
+    args: '-k "(not ramdisk) and (not pcie) and (not fabrics)" tests'
+    random-order: true

@@ -1,0 +1,112 @@
+---
+doc: |
+  Naddi's "ramdisk" test xNVMe on Linux
+
+steps:
+- name: sysinfo
+  uses: linux.sysinfo
+
+- name: hugetlbfs
+  uses: linux_setup_hugetlbfs
+
+- name: test_ramdisk_not_random
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: false
+
+- name: test_ramdisk1
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk2
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk3
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk4
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk5
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk6
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk7
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk8
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk9
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk10
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk11
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk12
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk13
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk14
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk15
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
+
+- name: test_ramdisk16
+  uses: core.testrunner
+  with:
+    args: '-k "ramdisk" tests'
+    random-order: true
